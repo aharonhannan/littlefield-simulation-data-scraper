@@ -1,9 +1,9 @@
 import configparser
 import mechanize
+import pandas as pd
 import xlsxwriter
 from bs4 import BeautifulSoup
 from http.cookiejar import CookieJar
-import pandas as pd
 
 def littlefieldDataScraper():
     BASE_URL = "http://op.responsive.net"
@@ -11,6 +11,8 @@ def littlefieldDataScraper():
     #Read from the config ini file
     config = configparser.ConfigParser()
     config.read('./config.ini')
+
+    #To update these settings, please modify the config file
     TEAM_ID = config['ConnectionInfo']['teamId']
     PASSWORD = config['ConnectionInfo']['password']
     SECTION_ID = config['ConnectionInfo']['sectionId']
