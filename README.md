@@ -35,3 +35,11 @@ If things succeeded, you should have a success message returned, along with an o
 - data.xlsx
 - history.xlsx
 - standings.xlsx
+
+## Output
+
+The script will output three separate Excel spreadsheets, which you can feed into a dashboard-building tool, such as Power BI.
+
+- data.xlsx - The consolidated data table of all inputs and outputs of the system across all machines, updated at each day interval.
+- history.xlsx - The table of your team's decisions, updated at each day interval.
+- standings.xlsx - The table of every team's rank and their cash-on-hand at the latest script run time.
